@@ -8,9 +8,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/background-task')
-def background_task():
-    return send_from_directory(app.root_path, "background_task.txt")
+@app.route('/styles.css')
+def serve_styles():
+    return send_from_directory('.', 'styles.css')
 
 
 if __name__ == '__main__':
