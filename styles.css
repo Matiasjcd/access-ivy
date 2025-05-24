@@ -60,6 +60,13 @@ h1, h2 {
 /*
 Index Styles
 */
+.index-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-container {
     display: flex;
     align-items: center;
@@ -154,12 +161,19 @@ Index Styles
 	background-color: #5c636a;
 }
 
+.top-space {
+	margin-top: 3.5rem;
+}
+
+.bottom-space {
+	margin-top: 2rem;
+}
+
 .feature-text {
     font-weight: 400;
     font-size: 1.25rem;
     color: var(--secondary);
     line-height: 2;
-    margin-bottom: 3.5rem;
 }
 
 .feature-container .feature-image {
@@ -174,7 +188,7 @@ Profile Section Styles
 	font-weight: bold;
     font-size: 3rem;
 	text-align: center;
-	margin-bottom: 3rem;
+	margin: 7.5rem 0 3rem 0;
 }
 
 .profiles-parent {
@@ -336,10 +350,6 @@ Responsive Design
 }
 
 @media (max-width: 75rem) {
-    .logo {
-        width: 12rem !important;
-    }
-
 	.profiles-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -373,7 +383,7 @@ Responsive Design
     }
 
     .feature-container {
-        flex-direction: column !important;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -434,21 +444,25 @@ Responsive Design
 	}
 
 	.hero-header {
-        font-size: 3.5rem !important;
+        font-size: 3.5rem;
     }
 
     .hero-text {
-        font-size: 1rem !important;
+        font-size: 1rem;
     }
 
     .logo {
-        width: 8rem;
+        width: 10rem;
     }
 }
 
 @media (max-width: 39rem) {
 	.profiles-container {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.nav-links a {
+		display: none;
 	}
 }
 
