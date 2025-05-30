@@ -202,7 +202,7 @@ Profile Section Styles
 .profiles-container {
 	display: grid;
 	place-items: center;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 2rem;
 }
 
@@ -401,7 +401,7 @@ Responsive Design
     }
 
     .feature-image {
-        margin-top: -2.25rem;
+        margin-top: -2.5rem;
     }
 
     .feature-text {
