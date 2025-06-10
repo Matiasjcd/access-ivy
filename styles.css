@@ -340,6 +340,15 @@ footer {
 	margin: 0;
 }
 
+.watermark {
+	line-height: 2em;
+	font-size: 0.75rem;
+	padding-left: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
 /*
 Responsive Design
 */
