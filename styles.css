@@ -342,6 +342,7 @@ footer {
 
 .watermark {
 	line-height: 2em;
+	color: var(--tertiary);
 	font-size: 0.75rem;
 	padding-left: 1rem;
 	position: absolute;
